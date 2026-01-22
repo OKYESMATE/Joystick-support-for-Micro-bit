@@ -14,5 +14,6 @@ Microsoft Makecode:
 
 Mu editor:
 ¯\_(ツ)_/¯
+
 Other editors:
 ¯\_(ツ)_/¯
