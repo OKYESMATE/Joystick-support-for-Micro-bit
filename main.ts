@@ -2,7 +2,7 @@ let oldX = 0
 let oldY = 0
 
 //% color=#00AACC icon="\uf11b"
-namespace JoyBit {
+namespace Joystick {
 
     
     //% block="read analog pin %pin"
