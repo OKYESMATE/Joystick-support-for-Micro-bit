@@ -1,0 +1,14 @@
+{
+  "name": "joystick-input",
+  "version": "0.0.1",
+  "description": "Read joystick X, Y and button input from configurable micro:bit pins",
+  "dependencies": {
+    "core": "*",
+    "microbit": "*"
+  },
+  "files": [
+    "main.ts"
+  ],
+  "testFiles": [],
+  "public": true
+}
