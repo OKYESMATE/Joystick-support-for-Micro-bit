@@ -2,7 +2,7 @@ let oldX = 0
 let oldY = 0
 
 //% color=#00AACC icon="\uf11b"
-namespace Joy-Bit {
+namespace JoyBit {
 
     
     //% block="read analog pin %pin"
@@ -28,13 +28,22 @@ namespace Joy-Bit {
     export function joystickY(pin: AnalogPin): number {
         return pins.analogReadPin(pin)
     }
-    //% Has the joy stick moved?"
+    //% block="Has the joy stick moved?"
     export function hasStickMoved(): boolean {
-        // Only return true if the change is significant (more than 5 units)
-        return (Math.abs(oldX - AnalogPin.P0) > 5 || Math.abs(oldY - AnalogPin.P1) > 5);
-
+        
+        let currentX = pins.analogReadPin(AnalogPin.P0)
+        let currentY = pins.analogReadPin(AnalogPin.P1)
+        
+        // Calculate movement
+        let moved = (Math.abs(oldX - currentX) > 5 || Math.abs(oldY - currentY) > 5);
+        
+        // Update old values for the next check
+        oldX = currentX;
+        oldY = currentY;
+        
+        return moved;
     }
 
-    let oldX = pins.analogReadPin(AnalogPin.P0)
-    let oldy = pins.analogReadPin(AnalogPin.P1)
+    oldX = pins.analogReadPin(AnalogPin.P0)
+    oldy = pins.analogReadPin(AnalogPin.P1)
 }
