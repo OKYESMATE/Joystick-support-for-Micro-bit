@@ -11,6 +11,7 @@ Microsoft Makecode:
 6. You should see an extension named "joystick-input" or joy-bit, click it to add the extension
 7. Viola! you have loaded and installed the extension and is now ready for use.
 8. Reference the "How to use" section in this readme to find out how to use the extension!
+
 Mu editor:
 ¯\_(ツ)_/¯
 Other editors:
