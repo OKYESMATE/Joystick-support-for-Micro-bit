@@ -45,5 +45,5 @@ namespace JoyBit {
     }
 
     oldX = pins.analogReadPin(AnalogPin.P0)
-    oldy = pins.analogReadPin(AnalogPin.P1)
+    oldY = pins.analogReadPin(AnalogPin.P1)
 }
